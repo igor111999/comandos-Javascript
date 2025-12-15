@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #myDiv {
+            border: 1px solid #FF0000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="myDiv">This is a div.</div>
+    <br>
+    <p>
+        A propriedade margin define ou retorna as margens de um elemento. Esta propriedade pode assumir de um a quatro valores: Um valor, como: div {margin: 50px} - todas as quatro margens serão 50px Dois valores, como: div {margin: 50px 10px} - as margens superior
+        e inferior serão 50px, as margens esquerda e direita serão 10px Três valores, como: div {margin: 50px 10px 20px} - a margem superior será 50px, as margens esquerda e direita serão 10px, a margem inferior será 20px Quatro valores, como: div {margin:
+        50px 10px 20px 30px} - a margem superior será 50px, a margem direita será 10px, a margem inferior será 20px, a margem esquerda será 30px
+    </p>
+    <button type="button" onclick="myFunction()">Set margin</button>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDiv").style.margin = "50px 10px 20px 30px";
+        }
+    </script>
+
+</body>
+
+</html>

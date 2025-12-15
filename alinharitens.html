@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div#main {
+            width: 220px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+        }
+        
+        div#main div {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML Style Object</h1>
+    <h2>The alignItems Property</h2>
+
+    <div id="main">
+        <div style="background-color:coral;">RED</div>
+        <div style="background-color:lightblue;">BLUE</div>
+        <div style="background-color:lightgreen;">Green div with more content.</div>
+    </div>
+
+    <p>Click the button to set the value of the alignItems property to "flex-start"</p>
+    <button onclick="myFunction()">Try it</button>
+    <h5>
+        <p> center -- Os itens são posicionados no centro do contêiner</p>
+        <p>flex-start -- Os itens são posicionados no início do contêiner</p>
+        <p> flex-end -- Os itens são posicionados no final do contêiner</p>
+        <p>baseline-itens são posicionados na linha de base do contêiner</p>
+        <p> initial --Define esta propriedade para seu valor padrão.</p>
+        <p>inherit -- Herda esta propriedade de seu elemento pai.</p>
+    </h5>
+    <script>
+        function myFunction() {
+            document.getElementById("main").style.alignItems = "flex-start";
+        }
+    </script>
+
+</body>
+
+</html>
